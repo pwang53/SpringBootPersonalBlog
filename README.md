@@ -1,4 +1,4 @@
-#Spring Boot Personal Blog
+# Spring Boot Personal Blog
 
 ## Technical Stack:
 - Frontend: Semantic UI
