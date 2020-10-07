@@ -1,0 +1,75 @@
+/* change cursor icon */
+body{cursor:url(http://wosn.net/zhizhen/normal.cur),default !important; } 
+a:hover{cursor:url(http://wosn.net/zhizhen/link.cur),pointer !important;}
+
+.my-padded-mini {
+    padding: 0.3em !important;
+}
+
+.my-padded-tb-mini {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+
+.my-padded-tb-little {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.my-padded-tb-small {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+
+.my-padded-tb-mid {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+
+.my-padded-tb-big {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+
+.my-padded-tb-large {
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+
+.my-padded-tb-massive {
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+/* text */
+.my-text {
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8 !important;
+}
+
+.my-text-thin {
+    font-weight: 300 !important;
+}
+
+.my-text-spaced {
+    letter-spacing: 1px !important;
+}
+
+.my-text-lined {
+    line-height: 1.8 !important;
+}
+
+.my-opacity-mini {
+    opacity: 0.8 !important;
+}
+
+/* display */
+.my-inline-block {
+    display: inline-block !important;
+}
+
+.my-container {
+    max-width: 72em !important;
+    margin: auto !important;
+}
