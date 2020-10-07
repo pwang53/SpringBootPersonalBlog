@@ -41,6 +41,11 @@ a:hover{cursor:url(http://wosn.net/zhizhen/link.cur),pointer !important;}
     padding-bottom: 5em !important;
 }
 
+.m-padded-lr{
+	padding-left: 4em !important;
+	padding-right: 4em !important;
+}
+
 /* text */
 .my-text {
     font-weight: 300 !important;
@@ -60,6 +65,11 @@ a:hover{cursor:url(http://wosn.net/zhizhen/link.cur),pointer !important;}
     line-height: 1.8 !important;
 }
 
+/*-----margin---------*/
+.m-margin-bottom-small{
+	margin-bottom: 0.5em !important;
+}
+
 .my-opacity-mini {
     opacity: 0.8 !important;
 }
@@ -72,4 +82,9 @@ a:hover{cursor:url(http://wosn.net/zhizhen/link.cur),pointer !important;}
 .my-container {
     max-width: 72em !important;
     margin: auto !important;
+}
+
+.m-container-small {
+	max-width: 60em !important;
+	margin: auto !important;
 }
