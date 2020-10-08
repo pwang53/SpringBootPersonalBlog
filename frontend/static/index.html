@@ -9,29 +9,36 @@
 </head>
 <body>
     <!-- 导航 -->
-    <nav class="ui inverted attached segment my-padded-tb-mini my-shadow-small">
+
+    <nav class="ui inverted attached segment my-padded-tb-mini">
         <div class="ui container">
-            <div class="ui inverted secondary menu">
+            <div class="ui inverted secondary stackable menu">
                 <h2 class="ui teal header item">Blog</h2>
-                <a href="#" class="item"><i class="home icon"></i>首页</a>
-                <a href="#" class="item"><i class="idea icon"></i>分类</a>
-                <a href="#" class="item"><i class="tags icon"></i>标签</a>
-                <a href="#" class="item"><i class="archive icon"></i>归档</a>
-                <a href="#" class="item"><i class="info icon"></i>关于我</a>
+                <a href="#" class="my-item item my-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="my-item item my-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="my-item item my-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="#" class="my-item item my-mobile-hide"><i class="archive icon"></i>归档</a>
+                <a href="#" class="my-item item my-mobile-hide"><i class="info icon"></i>关于我</a>
                 <div class="right item">
-                    <div class="ui icon inverted transparent input">
+                    <div class="ui icon inverted transparent input my-item my-mobile-hide">
+
                         <input type="text" placeholder="搜索......">
                         <i class="search link icon"></i>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <a href="#" class="ui menu toggle black icon button my-right-top my-mobile-show"><i class="sidebar icon"></i></a>
     </nav>
     
     <!-- 中间 -->
-    <div class="my-padded-tb-big my-container">
+    <div class="my-padded-tb-big my-container my-margin-tp-large">
         <div class="ui container">
-            <div class="ui grid">
+            <div class="ui stackable grid">
+                <!-- 左边博客列表 -->
+
                 <div class="eleven wide column">
                     <!-- 头 -->
                     <div class="ui top attached segment">
@@ -48,7 +55,9 @@
                     <!-- 内容 -->
                     <div class="ui attached segment">
                         <div class="ui vertical segment m-padded-tb-big">
-                            <div class="ui padded grid">
+
+                            <div class="ui mobile reversed stackable padded grid">
+
                                 <div class="eleven wide column">
                                     <h3 class="ui header">我爱我家</h3>
                                     <p class="my-text">选择“文字”工具 ，在希望出现首字下沉的段落中单击。 在“段落”面板或“控制”面板的“首字下沉行数” 中键入一个数，指示首字下沉的预期下沉行数。</p>
@@ -81,7 +90,9 @@
                             </div>
                         </div>
                         <div class="ui vertical segment m-padded-tb-big">
-                            <div class="ui padded grid">
+
+                            <div class="ui mobile reversed stackable padded grid">
+
                                 <div class="eleven wide column">
                                     <h3 class="ui header">我爱我家</h3>
                                     <p class="my-text">选择“文字”工具 ，在希望出现首字下沉的段落中单击。 在“段落”面板或“控制”面板的“首字下沉行数” 中键入一个数，指示首字下沉的预期下沉行数。</p>
@@ -114,7 +125,9 @@
                             </div>
                         </div>
                         <div class="ui vertical segment m-padded-tb-big">
-                            <div class="ui padded grid">
+
+                            <div class="ui mobile reversed stackable padded grid">
+
                                 <div class="eleven wide column">
                                     <h3 class="ui header">我爱我家</h3>
                                     <p class="my-text">选择“文字”工具 ，在希望出现首字下沉的段落中单击。 在“段落”面板或“控制”面板的“首字下沉行数” 中键入一个数，指示首字下沉的预期下沉行数。</p>
@@ -147,7 +160,9 @@
                             </div>
                         </div>
                         <div class="ui vertical segment m-padded-tb-big">
-                            <div class="ui padded grid">
+
+                            <div class="ui mobile reversed stackable padded grid">
+
                                 <div class="eleven wide column">
                                     <h3 class="ui header">我爱我家</h3>
                                     <p class="my-text">选择“文字”工具 ，在希望出现首字下沉的段落中单击。 在“段落”面板或“控制”面板的“首字下沉行数” 中键入一个数，指示首字下沉的预期下沉行数。</p>
@@ -180,7 +195,9 @@
                             </div>
                         </div>
                         <div class="ui vertical segment m-padded-tb-big">
-                            <div class="ui padded grid">
+
+                            <div class="ui mobile reversed stackable padded grid">
+
                                 <div class="eleven wide column">
                                     <h3 class="ui header">我爱我家</h3>
                                     <p class="my-text">选择“文字”工具 ，在希望出现首字下沉的段落中单击。 在“段落”面板或“控制”面板的“首字下沉行数” 中键入一个数，指示首字下沉的预期下沉行数。</p>
@@ -227,8 +244,160 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 右边的topic -->
                 <div class="five wide column">
-                    <div class="ui segment">
+
+                    <!-- 分类 -->
+                    <div class="ui segments">
+                        <!-- 头部的segment -->
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="idea icon"></i>分类
+                                </div>
+                                <div class="column right aligned">
+                                    <a href="#">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 中部的segment -->
+                        <div class="ui teal segment">
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 标签 -->
+                    <div class="ui segments my-margin-tp-large">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="tags icon"></i>标签
+                                </div>
+                                <div class="column right aligned">
+                                    <a href="#">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <div class="ui teal basic left pointing label my-margin-tp-tiny">方法论
+                                <div class="detail">23</div>
+                            </div>
+
+                            <div class="ui teal basic left pointing label my-margin-tp-tiny">论
+                                <div class="detail">23</div>
+                            </div>
+
+                            <div class="ui teal basic left pointing label my-margin-tp-tiny">论
+                                <div class="detail">23</div>
+                            </div>
+
+                            <div class="ui teal basic left pointing label my-margin-tp-tiny">方法论
+                                <div class="detail">23</div>
+                            </div>
+
+                            <div class="ui teal basic left pointing label my-margin-tp-tiny">方法论
+                                <div class="detail">23</div>
+                            </div>
+
+                            <div class="ui teal basic left pointing label my-margin-tp-tiny">方法论
+                                <div class="detail">23</div>
+                            </div>
+
+                            <div class="ui teal basic left pointing label my-margin-tp-tiny">方法论
+                                <div class="detail">23</div>
+                            </div>
+
+                            <div class="ui teal basic left pointing label my-margin-tp-tiny">方法论
+                                <div class="detail">23</div>
+                            </div>
+
+                            <div class="ui teal basic left pointing label my-margin-tp-tiny">方法论
+                                <div class="detail">23</div>
+                            </div>
+
+                            <div class="ui teal basic left pointing label my-margin-tp-tiny">方法论
+                                <div class="detail">23</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- 最新推荐 -->
+                    <div class="ui segments my-margin-tp-large">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="bookmark icon"></i>最新推荐
+                                </div>
+                                <div class="column right aligned">
+                                    <a href="#">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="ui segment">
+                                <a href="" target="_blank" class="my-black">用户故事 （User Story）</a>
+                            </div>
+
+                            <div class="ui segment">
+                                <a href="" target="_blank" class="my-black">用户故事 （User Story）</a>
+                            </div>
+
+                            <div class="ui segment">
+                                <a href="" target="_blank" class="my-black">用户故事 （User Story）</a>
+                            </div>
+
+                            <div class="ui segment">
+                                <a href="" target="_blank" class="my-black">用户故事 （User Story）</a>
+                            </div>
+
+                            <div class="ui segment">
+                                <a href="" target="_blank" class="my-black">用户故事 （User Story）</a>
+                            </div>
+
+                            <div class="ui segment">
+                                <a href="" target="_blank" class="my-black">用户故事 （User Story）</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 二维码 -->
+                    <h4 div class="ui horizontal divider header my-margin-tp-large">扫码关注我</h4>
+                    <div class="ui centered card" style="width: 11em">
+                        <img src="./images/wall.jpg" alt="" class="ui rounded image">
 
                     </div>
                 </div>
@@ -237,12 +406,16 @@
     </div>
 
     <br>
-    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <br>
+
 
     <!-- 底部 -->
     <footer class="ui inverted vertical segment my-padded-tb-massive">
         <div class="ui center aligned container">
-            <div class="ui inverted divided grid">
+
+            <div class="ui inverted divided stackable grid">
+
                 <div class="three wide column">
                     <div class="ui inverted link list">
                         <div class="item">
@@ -278,5 +451,12 @@
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/semantic.min.js"></script>
     <script type="text/javascript" src="js/click.js"></script>
+
+    <script>
+        $('.menu.toggle').click(function() {
+            $('.my-item').toggleClass('my-mobile-hide');
+        });
+    </script>
+
 </body>
 </html>
