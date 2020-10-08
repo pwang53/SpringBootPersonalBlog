@@ -79,12 +79,58 @@ a:hover{cursor:url(http://wosn.net/zhizhen/link.cur),pointer !important;}
     display: inline-block !important;
 }
 
+/* contianer */
 .my-container {
     max-width: 72em !important;
     margin: auto !important;
 }
 
+
 .m-container-small {
 	max-width: 60em !important;
 	margin: auto !important;
 }
+
+/* margin */
+.my-margin-tp-tiny {
+    margin-top: 0.3em !important;
+}
+
+.my-margin-tp-small {
+    margin-top: 0.5em !important;
+}
+
+.my-margin-tp {
+    margin-top: 1em !important;
+}
+
+.my-margin-tp-large {
+    margin-top: 2em !important;
+}
+/* color */
+.my-black {
+    color: #333 !important;
+}
+
+/* position */
+.my-right-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* mobile */
+.my-mobile-show {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .my-mobile-hide {
+        display: none !important;
+    }
+
+    .my-mobile-show {
+        display: block !important;
+    }
+}
+
