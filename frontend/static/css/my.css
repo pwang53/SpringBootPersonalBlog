@@ -8,6 +8,10 @@ a:hover{cursor:url(http://wosn.net/zhizhen/link.cur),pointer !important;}
     padding: 0.3em !important;
 }
 
+.my-padded {
+    padding: 1em !important;
+}
+
 .my-padded-tb-mini {
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
@@ -130,6 +134,7 @@ my.margin-tb-tiny {
     box-shadow: 0 4px 8px rgba(0,0,0,0.4) !important;
 
 }
+
 /* color */
 .my-black {
     color: #333 !important;
@@ -142,6 +147,17 @@ my.margin-tb-tiny {
     top: 0;
     right: 0;
 }
+
+.my-fixed{
+	position: fixed !important;
+	z-index: 10 !important;
+}
+.my-right-bottom {
+    bottom: 0 !important;
+	right: 0 !important;
+}
+
+
 
 /* mobile */
 

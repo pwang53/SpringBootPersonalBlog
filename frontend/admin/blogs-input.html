@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../static/css/semantic.min.css">
+	<link rel="stylesheet" href="../static/lib/editormd/css/editormd.min.css">
     <link rel="stylesheet" type="text/css" href="../static/css/my.css">
     <title>博客发布</title>
 </head>
@@ -66,8 +67,20 @@
                 </div>
             </div>
             <div class="field">
-                <textarea placeholder="内容" name="content"></textarea>
-            </div>
+				<div id ="md-content" style="z-index: 1 !important;">
+					<textarea placeholder="内容" name="content"  style="display:none;">
+					[TOC]
+
+#### Disabled options
+
+- TeX (Based on KaTeX);
+- Emoji;
+- Task lists;
+- HTML tags decode;
+- Flowchart and Sequence Diagram;
+					</textarea>
+				</div>
+			</div>
             <div class="two fields">
                 <div class="field">
                     <div class="ui left labeled action input">
@@ -185,12 +198,35 @@
 <script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="../static/js/semantic.min.js"></script>
 <script type="text/javascript" src="../static/js/click.js"></script>
+<script type="text/javascript" src="../static/lib/editormd/editormd.min.js"></script>
 <script>
     $('.ui.dropdown').dropdown({
         on : 'hover'
     });
 </script>
 <script>
+	var contentEditor;
+
+            $(function() {
+                contentEditor = editormd("md-content", {
+                    width   : "100%",
+                    height  : 640,
+                    syncScrolling : "single",
+                    path    : "../static/lib/editormd/lib/"
+                });
+                
+                /*
+                // or
+                contentEditor = editormd({
+                    id      : "test-editormd",
+                    width   : "90%",
+                    height  : 640,
+                    path    : "../lib/editormd"
+                });
+                */
+            });
+
+
     $('.menu.toggle').click(function() {
         $('.my-item').toggleClass('my-mobile-hide');
     });
